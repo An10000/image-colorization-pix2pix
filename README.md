@@ -29,18 +29,25 @@ project_root/
 
 
 
-### Training Procedure ###
-
+## Training Procedure ##
+### Installation ###
 1. Install Python 3.10
 2. Install dependencies
 
     Run the following command in your terminal:
 
     `pip install -r requirements.txt`
+### Clean Dataset ###
 3. Place color images and grayscale images into `./dataset/color` and `./dataset/gray` respectively
 4. Run `split_dataset.py`
+   `python split_dataset.py`
+### Training ###
+5. If using NVIDIA GPU: install CUDA:
+   `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118`
 5. Run `main.py` to train the model
+   `python main.py`
 6. Move the trained model into `./models_select/`
-7. Run `test_model.py` or `model_convolution.py` for inference
-8. View the generated results in `./test_color_output/`
+   `mv model_GAN.pth ./models_select/model_GAN.pth`
+8. Run `test_model.py` or `model_convolution.py` for inference
+9. View the generated results in `./test_color_output/`
 
