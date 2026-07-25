@@ -40,14 +40,23 @@ project_root/
 ### Clean Dataset ###
 3. Place color images and grayscale images into `./dataset/color` and `./dataset/gray` respectively
 4. Run `split_dataset.py`
+
    `python split_dataset.py`
 ### Training ###
 5. If using NVIDIA GPU: install CUDA:
+
    `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118`
-5. Run `main.py` to train the model
+6. Run `main.py` to train the model
+
    `python main.py`
-6. Move the trained model into `./models_select/`
+7. Move the trained model into `./models_select/`
+   
    `mv model_GAN.pth ./models_select/model_GAN.pth`
-8. Run `test_model.py` or `model_convolution.py` for inference
-9. View the generated results in `./test_color_output/`
+
+   or, on Windows:
+
+   `move model_GAN.pth .\models_select\model_GAN.pth`
+9. Run `test_model.py` or `model_convolution.py` for inference
+
+10. View the generated results in `./test_color_output/`
 
