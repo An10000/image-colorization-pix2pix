@@ -60,3 +60,16 @@ project_root/
 
 10. View the generated results in `./test_color_output/`
 
+## Example outputs ##
+Given Greyscale:
+
+<img width="150" height="150" alt="43" src="https://github.com/user-attachments/assets/91ea2512-b61c-4aa0-82d6-e67a9e77437c" />
+
+Colored by our trained model:
+
+<img width="256" height="256" alt="43" src="https://github.com/user-attachments/assets/93a29982-a927-42bc-a37f-d53f2d2ea33d" />
+
+Original color of image, for reference:
+
+<img width="150" height="150" alt="43" src="https://github.com/user-attachments/assets/a5b85904-3c11-4aa9-8ff3-83b11c3e17ee" />
+
